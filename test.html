@@ -296,46 +296,102 @@
           </div>
         </div>
       </div> -->
-
-
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
+     
+      <header>
+        <!-- navbar section -->
+        <nav class="container mx-auto bg-transparent md:bg-rose-500 lg:bg-rose-500 flex items-center justify-between px-4 py-2 sm:px-6 md:px-8 lg:px-12 rounded-full mt-4 md:mt-8 lg:mt-8 lg:mb-8">
+        <!-- menu --> 
+            <div class="hidden md:flex items-center space-x-4">
+                <ul class="flex items-center space-x-4">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About Us</a></li>
+                    <li><a href="#" class="text-white">Shop</a></li>
+                    <li><a href="#" class="text-white">All Files</a></li>
+                </ul>
             </div>
-          </button>
+
+            <!-- logo -->
+            <div>
+                <div class="md:text-white font-bold text-2xl flex justify-center">
+                    <img class="w-9 md:w-10 pr-1 md:pr-2 lg:pr-2" src="./images/logo.png" alt=".">
+                    <p>Fruit-Burst</p>
+                </div>
+            </div>
+
+            <!-- search bar & search icon -->
+        <div class="hidden sm:flex items-center space-x-4">
+            <div class="relative">
+                <input type="text" placeholder="Search"
+                    class="px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none">
+                <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </span>
+            </div>
         </div>
-      </div>
 
+        <!-- Dropdown menu content -->
+        <div class="sm:hidden relative">
+            <button type="button" class="text-base focus:outline-none" aria-level="menu" >
+                <svg class="h-6 w-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15">   
+                    </path>
+                </svg>
+            </button>
+            <ul class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Shop</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All Files</a></li>
+            </ul>
+        </div>
 
+        </nav>
+        <!-- banner section -->
+        <div class="carousel-container container mx-auto relative">
+            <div class="absolute z-10 inset-y-5 lg:inset-y-16 md:inset-y-24 inset-x-16 lg:inset-x-52 md:inset-x-32 text-center w-2/3 lg:w-2/3 space-y-2 lg:space-y-4 items-center">
+                <h1 class="text-2xl md:text-5xl lg:text-7xl text-white">Exotic tastes at your doorstep</h1>
+                <p class="text-sm lg:text-lg text-white">We supply highly quality organic products</p>
+                <button class="bg-rose-500 md:btn-error px-4 rounded-lg py-2 text-sm md:btn btn-error text-white">Shop Now</button>
+            </div>
+    
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-
-      Home About Us Shop All Files
-      Create a Responsive navbar with html, tailwind css for three breakpoints(sm, md, lg) with menu name as 'Home' 'About Us' 'Shop' 'All Files' which will be positioned in 'left side' of navbar, And a logo named 'Fruit-Burst' which will be positioned in 'center', And a search bar in the 'right side' of the navbar and inside the search bar there will be a search symbol in the 'right side of search bar'. In small device or sm breakpoints logo will be positioned in left side of navbar and menu will be positioned in right side with dropdown only, And search bar will be hidden in small device or sm breakpoints. navbar background color will be 'bg-rose-500' and border-radius will be 'rounded-full'.
-
-
-      Create a Responsive navbar with html and tailwind css only for three breakpoints(sm:, md:, lg:) with menu name as 'Home' 'About Us' 'Shop' 'All Files' which will be positioned in 'left side' of navbar, And a logo named 'Fruit-Burst' which will be positioned in 'center', And a search bar in the 'right side' of the navbar and inside the search bar there will be a search symbol in the 'right side of search bar'. In small device or sm: breakpoints the logo name only (but not menu list) will be positioned in left side of navbar and menu will be positioned in right side with dropdown list only(the menu list will be visible after clicking dropdown icon), And search bar will be hidden in small device or sm: breakpoints. navbar background color will be 'bg-rose-500' and border-radius will be 'rounded-full'. Please do not use javascript.
-
+     
 
 </body>
 

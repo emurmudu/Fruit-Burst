@@ -45,8 +45,9 @@
 <body class="font-lato">
     <header>
         <!-- navbar section started-->
-        <nav class="container mx-auto sm:bg-transparent md:bg-rose-500 lg:bg-rose-500 flex items-center justify-between px-4 py-2 sm:px-6 md:px-8 lg:px-12 rounded-full mt-4 md:mt-8 md:mb-8 lg:mt-8 lg:mb-8">
-        <!-- menu --> 
+        <nav
+            class="container mx-auto sm:bg-transparent md:bg-rose-500 lg:bg-rose-500 flex items-center justify-between px-4 py-2 sm:px-6 md:px-8 lg:px-12 rounded-full mt-4 md:mt-8 md:mb-8 lg:mt-8 lg:mb-8">
+            <!-- menu -->
             <div class="hidden md:flex items-center space-x-4">
                 <ul class="flex items-center space-x-4">
                     <li><a href="#" class="text-white">Home</a></li>
@@ -65,46 +66,51 @@
             </div>
 
             <!-- search bar & search icon -->
-        <div class="hidden sm:flex items-center space-x-4">
-            <div class="relative">
-                <input type="text" placeholder="Search"
-                    class="px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none">
-                <span class="absolute inset-y-0 right-0 flex items-center pr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                    </svg>
-                </span>
+            <div class="hidden sm:flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search"
+                        class="px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none">
+                    <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </span>
+                </div>
             </div>
-        </div>
 
-        <!-- Dropdown menu content -->
-        <div class="sm:hidden relative">
-            <button type="button" class="text-base focus:outline-none" aria-level="menu" >
-                <svg class="h-6 w-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15">   
-                    </path>
-                </svg>
-            </button>
-            <ul class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
-                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a></li>
-                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</a></li>
-                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Shop</a></li>
-                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All Files</a></li>
-            </ul>
-        </div>
+            <!-- Dropdown menu content -->
+            <div class="sm:hidden relative">
+                <button type="button" class="text-base focus:outline-none" aria-level="menu">
+                    <svg class="h-6 w-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 17 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15">
+                        </path>
+                    </svg>
+                </button>
+                <ul
+                    class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Shop</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All Files</a></li>
+                </ul>
+            </div>
         </nav>
         <!-- navbar section ended-->
         <!-- banner section started -->
         <div class="relative">
             <div class="carousel-container container mx-auto relative min-h-[Calc(100vh - 120px)]">
-                <div class="absolute z-10 inset-y-5 lg:inset-y-16 md:inset-y-24 inset-x-16 lg:inset-x-52 md:inset-x-32 text-center w-2/3 lg:w-2/3 space-y-2 lg:space-y-4 items-center">
+                <div
+                    class="absolute z-10 inset-y-5 lg:inset-y-16 md:inset-y-24 inset-x-16 lg:inset-x-52 md:inset-x-32 text-center w-2/3 lg:w-2/3 space-y-2 lg:space-y-4 items-center">
                     <h1 class="text-2xl md:text-5xl lg:text-7xl text-white">Exotic tastes at your doorstep</h1>
                     <p class="text-sm lg:text-lg text-white">We supply highly quality organic products</p>
-                    <button class="bg-rose-500 md:btn-error px-4 rounded-lg py-2 text-sm md:btn btn-error text-white">Shop Now</button>
+                    <button
+                        class="bg-rose-500 md:btn-error px-4 rounded-lg py-2 text-sm md:btn btn-error text-white">Shop
+                        Now</button>
                 </div>
-        
+
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
                         <img src="./images/banner1.png" class="w-full" />
@@ -136,25 +142,26 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:flex lg:justify-center lg:rounded-lg lg:w-4/5 lg:h-52 lg:mx-auto lg:absolute lg:items-center lg:bg-white lg:z-50 lg:top-96 lg:left-36 md:hidden hidden">
-                <div class="lg:flex lg:flex-col lg:items-center lg:py-12 lg:px-12">
+            <div
+                class="lg:flex lg:justify-center lg:rounded-lg lg:w-4/5 lg:h-52 lg:mx-auto lg:absolute lg:items-center lg:bg-white lg:z-50 lg:top-96 lg:left-36 md:hidden hidden">
+                <div class="lg:flex lg:flex-col lg:items-center space-y-4 lg:py-12 lg:px-12">
                     <img src="./images/fruit1.png" alt="">
                     <p class="text-xl font-medium">Grapes</p>
                 </div>
-                <div class="lg:flex lg:flex-col lg:items-center lg:py-12 lg:px-12">
+                <div class="lg:flex lg:flex-col lg:items-center space-y-4 lg:py-12 lg:px-12">
                     <img src="./images/fruit2.png" alt="">
                     <p class="text-xl font-medium">Orange</p>
                 </div>
-                <div class="lg:flex lg:flex-col lg:items-center lg:py-12 lg:px-12">
+                <div class="lg:flex lg:flex-col lg:items-center space-y-4 lg:py-12 lg:px-12">
                     <img src="./images/fruit3.png" alt="">
                     <p class="text-xl font-medium">Mango</p>
                 </div>
-                <div class="lg:flex lg:flex-col lg:items-center lg:py-12 lg:px-12">
+                <div class="lg:flex lg:flex-col lg:items-center space-y-4 lg:py-12 lg:px-12">
                     <img src="./images/fruit4.png" alt="">
                     <p class="text-xl font-medium">Strawberry</p>
                 </div>
-                <div class="lg:flex lg:flex-col lg:items-center lg:py-12 lg:px-12">
-                    <img src="./images/fruit5.png" alt="">
+                <div class="lg:flex lg:flex-col lg:items-center space-y-4 lg:py-12 lg:px-12">
+                    <img src="./images/pomegranate.png" alt="">
                     <p class="text-xl font-medium">Pomegranate</p>
                 </div>
             </div>
@@ -163,11 +170,259 @@
     </header>
 
     <main>
+        <!-- deal of the day section started -->
+        <div class="container mx-auto bg-gray-400">
+            <div
+                class="flex flex-col gap-4 lg:flex lg:flex-row lg:justify-center lg:items-center lg:align-middle lg:w-full">
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left mt-6 space-y-4 lg:mt-36">
+                    <h1 class="text-2xl lg:text-4xl font-bold">Deal of the day</h1>
+                    <p class="w-2/3">Wow!! Hurry Up!!!! Hurry Up!!!! our GREAT deal is going on. Fulfil your
+                        satisfaction by placing order before ending of the offer time.</p>
+                </div>
+                <div class="grid grid-flow-col gap-5 text-center lg:text-right  justify-center lg:mt-24">
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="countdown font-bold text-2xl lg:text-4xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            <span class="text-lg">days</span>
+                        </div>
+                        <div class="dots">
+                            <i class="text-2xl mb-6 fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="countdown font-bold text-2xl lg:text-4xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            <span class="text-lg">hours</span>
+                        </div>
+                        <div class="dots">
+                            <i class="text-2xl mb-6 fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="countdown font-bold text-2xl lg:text-4xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            <span class="text-lg">min</span>
+                        </div>
+                        <div class="dots">
+                            <i class="text-2xl mb-6 fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="countdown font-bold text-2xl lg:text-4xl">
+                                <span style="--value:8;"></span>
+                            </span>
+                            <span class="text-lg">sec</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- deal of the day card section started -->
+        <div class="container mx-auto bg-red-400">
+            <div>
+                <div class="lg">
+                    <img src="./images/apple.png" alt="">
+                    <h3>12.90$ - 18.85$</h3>
+                    <div class="flex flex-col">
+                        <div class="divider"></div>
+                    </div>
+                    <p>Apple</p>
+
+                    <div class="rating rating-lg rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                    </div>
+
+                    <div>
+                        <!-- The button to open modal -->
+                        <a href="#my_modal_8" class="btn">open modal</a>
+                        <!-- Put this part before </body> tag -->
+                        <div class="modal" id="my_modal_8">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">This modal works with anchor links</p>
+                                <div class="modal-action">
+                                    <a href="#" class="btn">Yay!</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="modal-action">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </div>
+                            </form>
+                        </dialog>
+
+
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="modal-action">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </div>
+                            </form>
+                        </dialog>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- deal of the day card section ended -->
+
+
+        <!-- meet the team section started -->
+
+        <div class="hero min-h-screen"
+            style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <!-- meet the team section ended -->
+
+
+        <!-- why choose us section started -->
+        <h1>Why Choose Us</h1>
+        <p>We believe in customer satisfaction. We have strong team who are always deicated to meet your needs</p>
+        <!-- left content -->
+        <div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- center image -->
+        <div>
+            <img src="" alt="">
+        </div>
+
+        <!-- right content -->
+        <div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- why choose us section ended -->
 
     </main>
 
     <footer>
-
+        <div>
+            <img src="" alt="">
+            <p>Fruit-Burst</p>
+        </div>
+        <div>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">All Files</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">My Account</a></li>
+        </div>
+        <div>
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+            <a href="">Youtube</a>
+            <a href="">LinkedIn</a>
+            <a href="">Instragram</a>
+            <a href="">Apple</a>
+        </div>
     </footer>
 </body>
 

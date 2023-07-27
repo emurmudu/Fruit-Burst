@@ -171,7 +171,7 @@
 
     <main>
         <!-- deal of the day section started -->
-        <div class="container mx-auto bg-gray-400">
+        <div class="container mx-auto">
             <div
                 class="flex flex-col gap-4 lg:flex lg:flex-row lg:justify-center lg:items-center lg:align-middle lg:w-full">
                 <div class="flex flex-col items-center lg:items-start text-center lg:text-left mt-6 space-y-4 lg:mt-36">
@@ -233,15 +233,15 @@
 
         <!-- deal of the day card section started -->
         <div class="container mx-auto">
-            <div class="lg:flex lg:justify-between lg:items-center lg:gap-4">
+            <div class="sm:flex-auto lg:flex md:grid md:grid-cols-2 lg:justify-between lg:items-center lg:gap-4">
                 <!-- card 1 -->
-                <div class="lg:text-center lg:space-y-3 lg:my-8 lg:py-4         lg:border-2 lg:border-gray-50 rounded-lg lg:flex-1">
+                <div class="lg:text-center text-center space-y-4 my-8 lg:space-y-3 lg:my-8 lg:py-4         lg:border-2 lg:border-gray-50 rounded-lg lg:flex-1">
                     <div class="flex justify-center lg:py-6">
                         <img src="./images/apple.png" alt="">
                     </div>
-                    <h3 class="text-2xl font-bold">12.90$ - 18.85$</h3>
+                    <h3 class="lg:text-2xl text-xl font-bold lg:font-bold">12.90$ - 18.85$</h3>
 
-                    <div class="flex flex-col lg:w-3/4 lg:mx-auto lg:text-base">
+                    <div class="flex flex-col lg:w-3/4 w-3/5 mx-auto lg:mx-auto lg:text-base">
                         <div class="divider"></div>
                     </div>
 
@@ -270,13 +270,13 @@
 
                 </div>
                 <!-- card 2 -->
-                <div class="lg:text-center lg:space-y-3 lg:my-8 lg:py-4         lg:border-2 lg:border-gray-50 rounded-lg lg:flex-1">
+                <div class="lg:text-center text-center space-y-4 my-8 lg:space-y-3 lg:my-8 lg:py-4         lg:border-2 lg:border-gray-50 rounded-lg lg:flex-1">
                     <div class="flex justify-center lg:py-6">
                         <img src="./images/orange.png" alt="">
                     </div>
-                    <h3 class="text-2xl font-bold">14.90$ - 20.85$</h3>
+                    <h3 class="lg:text-2xl text-xl font-bold lg:font-bold">14.90$ - 20.85$</h3>
 
-                    <div class="flex flex-col lg:w-3/4 lg:mx-auto lg:text-base">
+                    <div class="flex flex-col lg:w-3/4 w-3/5 mx-auto lg:mx-auto lg:text-base">
                         <div class="divider"></div>
                     </div>
 
@@ -305,13 +305,13 @@
 
                 </div>
                 <!-- card 3 -->
-                <div class="lg:text-center lg:space-y-3 lg:my-8 lg:py-4         lg:border-2 lg:border-gray-50 rounded-lg lg:flex-1">
+                <div class="lg:text-center text-center space-y-4 my-8 lg:space-y-3 lg:my-8 lg:py-4         lg:border-2 lg:border-gray-50 rounded-lg lg:flex-1">
                     <div class="flex justify-center lg:py-6">
                         <img src="./images/red-dragon.png" alt="">
                     </div>
-                    <h3 class="text-2xl font-bold">20.90$ - 25.85$</h3>
+                    <h3 class="lg:text-2xl text-xl font-bold lg:font-bold">20.90$ - 25.85$</h3>
 
-                    <div class="flex flex-col lg:w-3/4 lg:mx-auto lg:text-base">
+                    <div class="flex flex-col lg:w-3/4 w-3/5 mx-auto lg:mx-auto lg:text-base">
                         <div class="divider"></div>
                     </div>
 
@@ -340,13 +340,13 @@
 
                 </div>
                 <!-- card 4 -->
-                <div class="lg:text-center lg:space-y-3 lg:my-8 lg:py-4         lg:border-2 lg:border-gray-50 rounded-lg lg:flex-1">
+                <div class="lg:text-center text-center space-y-4 my-8 lg:space-y-3 lg:my-8 lg:py-4         lg:border-2 lg:border-gray-50 rounded-lg lg:flex-1">
                     <div class="flex justify-center lg:py-6">
                         <img src="./images/banana.png" alt="">
                     </div>
-                    <h3 class="text-2xl font-bold">10.90$ - 14.85$</h3>
+                    <h3 class="lg:text-2xl text-xl font-bold lg:font-bold">10.90$ - 14.85$</h3>
 
-                    <div class="flex flex-col lg:w-3/4 lg:mx-auto lg:text-base">
+                    <div class="flex flex-col lg:w-3/4 w-3/5 mx-auto lg:mx-auto lg:text-base">
                         <div class="divider"></div>
                     </div>
 
@@ -550,7 +550,7 @@
             </div>
         </div>
         <!--footer social icons-->
-        <div class="grid grid-cols-6 text-center text-white w-3/4 mx-auto py-4">
+        <div class="grid grid-cols-6 text-center text-white w-3/4 mx-auto lg:text-2xl lg:w-2/4 py-4">
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-youtube"></i></a>
@@ -560,16 +560,19 @@
         </div>
     </footer>
 
+
+
+
     <!-- modal button content from Deal of the day -->
 
     <!-- Banana Modal Box -->
     <dialog id="my_banana" class="modal modal-bottom sm:modal-middle">
         <form method="dialog" class="modal-box">
-            <div class="lg:text-center lg:space-y-4 lg:my-8 lg:py-4 rounded-lg">
+            <div class="lg:text-center text-center space-y-2 my-4 py-2 lg:space-y-4 lg:my-8 lg:py-4 rounded-lg">
                 <div class="flex justify-center lg:py-4">
                     <img src="./images/banana.png" alt="">
                 </div>
-                <h3 class="text-2xl font-bold">Banana</h3>
+                <h3 class="lg:text-2xl text-base font-bold">Banana</h3>
         
                 <p class="lg:text-lg">You should consume bananas in the morning time with other breakfast items.</p>
                 <!-- rating icons -->
@@ -586,7 +589,7 @@
                     <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                     <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
                 </div>
-                <div class="modal-action lg:flex lg:justify-center lg:gap-4">
+                <div class="modal-action lg:flex flex justify-center gap-2 lg:justify-center lg:gap-4">
                     <!-- if there is a button in form, it will close the modal -->
                     <button class="btn btn-outline text-red-500">Close</button>
                     <button class="btn btn-error text-white">Buy Now</button>
@@ -596,15 +599,15 @@
     </dialog>
 
     <!-- Red Dragon Modal Box -->
-    <dialog id="my_dragon" class="modal modal-bottom sm:modal-middle">
+    <dialog id="my_dragon" class="modal modal-bottom sm:modal-middle xs:modal-middle">
         <form method="dialog" class="modal-box">
-            <div class="lg:text-center lg:space-y-4 lg:my-8 lg:py-4 rounded-lg">
+            <div class="lg:text-center text-center space-y-2 my-4 py-2 lg:space-y-4 lg:my-8 lg:py-4 rounded-lg">
                 <div class="flex justify-center lg:py-4">
                     <img src="./images/red-dragon.png" alt="">
                 </div>
-                <h3 class="text-2xl font-bold">Red Dragon</h3>
+                <h3 class="lg:text-2xl text-base font-bold">Red Dragon</h3>
         
-                <p class="lg:text-lg">Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system.</p>
+                <p class="lg:text-lg text-xs">Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system.</p>
                 <!-- rating icons -->
                 <div class="rating rating-md rating-half">
                     <input type="radio" name="rating-10" class="rating-hidden" />
@@ -619,7 +622,7 @@
                     <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                     <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
                 </div>
-                <div class="modal-action lg:flex lg:justify-center lg:gap-4">
+                <div class="modal-action lg:flex flex justify-center gap-2 lg:justify-center lg:gap-4">
                     <!-- if there is a button in form, it will close the modal -->
                     <button class="btn btn-outline text-red-500">Close</button>
                     <button class="btn btn-error text-white">Buy Now</button>
@@ -631,11 +634,11 @@
     <!-- Orange Modal Box -->
     <dialog id="my_orange" class="modal modal-bottom sm:modal-middle">
         <form method="dialog" class="modal-box">
-            <div class="lg:text-center lg:space-y-4 lg:my-8 lg:py-4 rounded-lg">
+            <div class="lg:text-center text-center space-y-2 my-4 py-2 lg:space-y-4 lg:my-8 lg:py-4 rounded-lg">
                 <div class="flex justify-center lg:py-4">
                     <img src="./images/orange.png" alt="">
                 </div>
-                <h3 class="text-2xl font-bold">Orange</h3>
+                <h3 class="lg:text-2xl text-base font-bold">Orange</h3>
         
                 <p class="lg:text-lg">Oranges are one of the healthiest fruits in the world. High in fiber, potassium, and Vitamin C.</p>
                 <!-- rating icons -->
@@ -652,7 +655,7 @@
                     <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                     <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
                 </div>
-                <div class="modal-action lg:flex lg:justify-center lg:gap-4">
+                <div class="modal-action lg:flex flex justify-center gap-2 lg:justify-center lg:gap-4">
                     <!-- if there is a button in form, it will close the modal -->
                     <button class="btn btn-outline text-red-500">Close</button>
                     <button class="btn btn-error text-white">Buy Now</button>
@@ -664,11 +667,11 @@
     <!-- Apple Modal Box -->
     <dialog id="my_apple" class="modal modal-bottom sm:modal-middle">
         <form method="dialog" class="modal-box">
-            <div class="lg:text-center lg:space-y-4 lg:my-8 lg:py-4 rounded-lg">
+            <div class="lg:text-center text-center space-y-2 my-4 py-2 lg:space-y-4 lg:my-8 lg:py-4 rounded-lg">
                 <div class="flex justify-center lg:py-4">
                     <img src="./images/apple.png" alt="">
                 </div>
-                <h3 class="text-2xl font-bold">Apple</h3>
+                <h3 class="lg:text-2xl text-base font-bold">Apple</h3>
         
                 <p class="lg:text-lg">Eating two apples a day is good for heart health. You can eat any kind of apple, as long as you eat the peel. .</p>
                 <!-- rating icons -->
@@ -685,7 +688,7 @@
                     <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                     <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
                 </div>
-                <div class="modal-action lg:flex lg:justify-center lg:gap-4">
+                <div class="modal-action lg:flex flex justify-center gap-2 lg:justify-center lg:gap-4">
                     <!-- if there is a button in form, it will close the modal -->
                     <button class="btn btn-outline text-red-500">Close</button>
                     <button class="btn btn-error text-white">Buy Now</button>

@@ -309,7 +309,7 @@
 
         <!-- meet the team section started -->
 
-        <div class="hero min-h-screen container mx-auto" style="background-image: url(./images/banner1.png);">
+        <div class="hero min-h-screen container mx-auto rounded-lg" style="background-image: url(./images/banner1.png);">
             <div class="hero-overlay bg-opacity-70"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-lg lg:max-w-full">
@@ -454,26 +454,28 @@
 
     </main>
 
-    <footer>
-        <div>
-            <img src="" alt="">
+    <footer class="bg-black min-h-56">
+        <div class="md:text-white text-white font-bold text-2xl flex justify-center pt-8 pb-4">
+            <img class="w-9 md:w-10 pr-1 md:pr-2 lg:pr-2" src="./images/logo.png" alt=".">
             <p>Fruit-Burst</p>
         </div>
-        <div>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">All Files</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">My Account</a></li>
+        <div class="grid grid-cols-4 text-center text-white">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Shop</a>
+            <a href="">All Files</a>
+            <div class="col-span-4 flex justify-center gap-12 mt-2 text-white">
+                <a href="">Support</a>
+                <a href="">My Account</a>
+            </div>
         </div>
-        <div>
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
-            <a href="">Youtube</a>
-            <a href="">LinkedIn</a>
-            <a href="">Instragram</a>
-            <a href="">Apple</a>
+        <div class="grid grid-cols-6 text-center text-white w-3/4 mx-auto py-4">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-apple"></i></a>
         </div>
     </footer>
 </body>
